@@ -1,0 +1,216 @@
+#home { 
+    background-image: url("greyzz.png");
+	
+}
+#contactus { 
+    background-image: url("greyzz.png");
+	
+}
+
+#content {
+	margin-top: 70px;
+	margin-bottom: 20px;
+}
+
+#famchildren { background-image: url("greyzz.png");} 
+
+#freespeech { background-image: url("greyzz.png");} 
+
+#healthmed {background-image: url("greyzz.png");}
+
+#immigration { background-image: url("greyzz.png");} 
+
+#lgbtqa { background-image: url("greyzz.png");} 
+
+#photovideo { background-image: url("greyzz.png");} 
+
+#privacy { background-image: url("greyzz.png");} 
+
+#searchwarrent { background-image: url("greyzz.png");} 
+
+#socialdiscrim { background-image: url("greyzz.png");} 
+
+#stoparrests { background-image: url("greyzz.png");} 
+
+#womens { background-image: url("greyzz.png");} 
+
+#worklabor { background-image: url("greyzz.png");} 
+
+div.pagetop{
+			background-color: teal;
+			color :white;
+			text-align:left;
+			top:0px;
+			position:fixed;
+			width:100%;			
+}
+
+div.sectionheader{
+			background-color:teal;
+			color:#ffd700;
+			text-align:left;
+			width:100%;
+}
+
+p.top{
+	font-size:290%;
+}
+
+
+.navbar {
+	padding-top: 10px;
+	color:teal;
+  background-image: url("greyzz.png");
+}
+
+.navbar a {
+	color: teal;
+	font-size:25px;
+	font-family: PT Sans;
+	text-decoration: none;
+	text-align:left;
+	padding: 15px;
+}
+
+.navbar li {
+	display: inline;
+}
+
+/*!
+ * This is code for the gallery div
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+.thumb {
+    margin-bottom: 30px;
+}
+
+.caption {
+    position:absolute;
+    top:0;
+    left:20px;
+    text-align:center;
+
+}
+h4 {
+    font-family: PT Sans;
+    color: teal;
+    font-size: 25px;
+}
+
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 450px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 450px;
+  background-color: #20b2aa;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+.textbutton{
+	color:FFFFFF;
+
+}
+
+.title{
+	font: PT Sans;
+	font-size: 30px;
+  font-color:teal;
+}
+
+.fontaw{
+	font-size: 120px;
+	text-align: center;
+  color:#ffa500;
+}
+
+.buttonclr{
+  color: teal;
+}
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 80px 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* RESPONSIVE CSS-------- */
+
+  /* Bump up size of carousel content */
+  .carousel-caption p {
+    margin-bottom: 20px;
+    font-size: 21px;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+
+.portfolio-item {
+  margin-bottom: 25px;
+}
+
+
+.hvr-float {
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+}
+.hvr-float:hover,
+.hvr-float:focus,
+.hvr-float:active {
+  transform: translateY(-8px);
+}
+
+.rightstitle{
+  margin-top: 80px;
+  margin-left: 0px;
+  font-family: PT Sans;
+  font-size: 65px;
+  color:#ffa500;
+
+}
+
+.rightsheadings{
+  font-size: 45px;
+  color:#ffa500;
+  margin-left: 0px;
+  font-family: PT Sans;
+}
+
+.rightsbody{
+  font-size: 35px;
+  color:teal;
+  margin-left:0px;
+  font-family: PT Sans;
+}
+
