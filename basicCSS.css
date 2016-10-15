@@ -150,12 +150,20 @@ h4 {
   color:#f238a6;
 }
 
+.rssFeed{
+  margin-top:20px;
+}
+
 a{
   color:#f238a6;
 }
 .hero-unit{
   fill:#d3d3d3;
   outline:black;
+}
+
+.rssFeed{
+  margin-top:20px;
 }
 
 .imageIcons{
