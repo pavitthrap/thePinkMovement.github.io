@@ -55,10 +55,15 @@
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
                     <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  
+  
+
+	
   </head>
 
   <body>
 
+  
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -71,9 +76,6 @@
           <a class="navbar-brand" href="#" style="color:#ffffff; font: PT Sans;">Support Network</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
         </div>
       </div>
     </nav>
@@ -112,15 +114,15 @@
             <div class="span4">
              <div class="form-group">
 				<h1 id="ChatPerson">Jenna</h1>
-				<textarea class="form-control" rows="20" id="comment"></textarea>
+				<textarea class="form-control" rows="20" id="comment">  </textarea>
 			</div>
             </div><!--/span-->
             <div class="span4">
               <div class="col-lg-9" style="float: right">
 				<div class="input-group" >
-					<input type="text" class="form-control" placeholder="Enter message...">
-					<span class="input-group-btn">
-						<button class="btn btn-default" type="button" >Send</button>
+					<input type="text" class="form-control" placeholder="Enter message..." id="text">
+					<span class="input-group-btn" ">
+						<button class="btn btn-default" type="button" id="sendTxt">Send</button>
 					</span>
 				</div><!-- /input-group -->
 			</div><!-- /.col-lg-6 -->
@@ -173,6 +175,14 @@
 
       <hr>
 
+	    
+  	<script type="text/javascript">
+		document.getElementById("sendTxt").onClick = function() {
+			var text = document.getElementById("text").value;
+			document.getElementById("comment").value = text;
+		}
+	</script>
+	  
       <footer>
         <p>&copy; Company 2013</p>
       </footer>
