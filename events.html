@@ -107,80 +107,123 @@
 
 
         <div class="col-xs-10">
+
+        <div class="container">
           <div class="mapbox">
 
 <div id="map" style="width:100%;height:500px"></div>
 
 <script>
 function myMap() {
-  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+  var myCenter = new google.maps.LatLng(39.31371,-82.096417);
   var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: myCenter, zoom: 5};
+  var mapOptions = {center: myCenter, zoom: 14};
   var map = new google.maps.Map(mapCanvas, mapOptions);
   var marker = new google.maps.Marker({position:myCenter});
   marker.setMap(map);
 
   var infowindow = new google.maps.InfoWindow({
-    content: "Meetup at 6 PM"
+    content: "Race for the Cure at Ohio University"
+  });
+  infowindow.open(map,marker);
+}
+var img = document.getElementById("ohio");
+    img.src = this.value;
+</script>
+
+<script>
+function myMapP() {
+  var myCenter = new google.maps.LatLng(40.1176,-75.01451);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 14};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+
+  var infowindow = new google.maps.InfoWindow({
+    content: "Philadelphia 3-day"
   });
   infowindow.open(map,marker);
 }
 
+var img = document.getElementById("p");
+    img.src = this.value;
+</script>
+
+<script>
+function myMapNY() {
+  var myCenter = new google.maps.LatLng(42.648322,-73.751608);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 14};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+
+  var infowindow = new google.maps.InfoWindow({
+    content: "Komen Northeastern New York Race for the Cure"
+  });
+  infowindow.open(map,marker);
+}
+
+var img = document.getElementById("ny");
+    img.src = this.value;
+</script>
+
+<script>
+function myMapNY1() {
+  var myCenter = new google.maps.LatLng(42.8922520495472
+,-78.859414042723);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 14};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+
+  var infowindow = new google.maps.InfoWindow({
+    content: "Kim Beat breast cancer cookout"
+  });
+  infowindow.open(map,marker);
+}
+
+var img = document.getElementById("ny");
+    img.src = this.value;
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-          </div>
+<div class="container">
+   <div class="infoBlocks">
+            <h1>Local Meetups And Events!</h1>
+  <div class="dropdown">
+    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Choose a state
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li><a href="javascript:myMap()">Ohio</a></li>
+            <li class="divider"></li>
+      <li><a href="javascript:myMapP()">Pennsylvania</a></li>
+            <li class="divider"></li>
+      <li><a href="javascript:myMapNY()">Albany, New York</a></li>
+      <li class="divider"></li>
+      <li><a href="javascript:myMapNY1()">Buffalo, New York</a></li>
+    </ul>
+  </div>
+</div>
+</br>
+</br>
+<img id="ohio" src="Screen Shot 2016-10-14 at 11.15.31 PM.png"/>
+<img id="p" src="Screen Shot 2016-10-14 at 11.16.42 PM.png"/>
+<img id="ny" src="Screen Shot 2016-10-14 at 11.16.59 PM.png"/>
+<img id="ny" src="Screen Shot 2016-10-15 at 12.12.32 AM.png"/>
 
-          <div class="infoBlocks">
-            <h1>Hello, world!</h1>
-            <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-            <p><a href="#" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-          
-          </div>
-          <div class="row-fluid">
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-            <div class="span4">
-              <h2>Heading</h2>
-              <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-              <p><a class="btn" href="#">View details &raquo;</a></p>
-            </div><!--/span-->
-          </div><!--/row-->
-          <div class="row-fluid">
-            
-            
-          </div><!--/row-->
-        </div><!--/span-->
-      </div><!--/row-->
+         <div class="row-fluid">
+         </div>
+         </div>
 
-
-      <hr>
+         <hr>
 
       <footer>
         <p>&copy; Company 2013</p>
       </footer>
 
     </div><!--/.fluid-container-->
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      
-      <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
   </body>
 </html>
