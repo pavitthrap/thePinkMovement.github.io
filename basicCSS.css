@@ -269,7 +269,9 @@ a{
 	margin-bottom:20px;
 	width: 200px;
 	height: 80px;
-	text-align: center;
+	vertical-align: middle;
+	padding-top: 25px;
+	font-size: 18px;
 }
 
 .message1 {
