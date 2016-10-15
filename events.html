@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Bootstrap, from Twitter</title>
+    <title>Local Events and Meetups</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -68,160 +68,157 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#" style="color:#ffffff; font: PT Sans;">Support Network</a>
+          <b><a class="navbar-brand" href="#" style="color:#ffffff; font: PT Sans;">Pink Movement</a></b>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
-        </div>
+        
+          <div class="navbar-form navbar-right">
+            <a href="UserProfile.html"  style="color:#ffffff;"><i class="fa fa-cog"></i></a>
+          </div>
       </div>
     </nav>
 
-     <div class="container-fluid">
+     <div class="container">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
+         <div class="col-xs-3 col-sm-3 col-md-2 sidebar" style="overflow-y:hidden;">
           <ul class="nav nav-sidebar">
             <div class="imageIcons">
-              <a href="#chat">
+              <a href="chat.html">
               <i class="fa fa-comments"></i> 
               </a>
             </div>
             <div class="imageIcons">
-              <a class="imageLinkCol" href="#groups">
+              <a class="imageLinkCol" href="groups.html">
               <i class="fa fa-heart"></i> 
               </a>
             </div>
             <div class="imageIcons">
-              <a href="#events">
+              <a href="events.html">
               <i class="fa fa-map-marker"></i> 
               </a>
             </div>
             <div class="imageIcons">
-              <a href="#fundraising">
+              <a href="fundraising.html">
               <i class="fa fa-money"></i> 
               </a>
             </div>
           </ul>
+        </div> <!-- end of first object-->
+
+
+
+    <div class="col-xs-10 col-sm-9 col-md-10 offset-xs-2">
+          <div style="margin-top:35px" class="mapbox">
+            <div id="map" style="width:100%;height:500px"></div>
+          </div> <!--idk about this end tag -->
+              <script>
+              function myMap() {
+                var myCenter = new google.maps.LatLng(39.31371,-82.096417);
+                var mapCanvas = document.getElementById("map");
+                var mapOptions = {center: myCenter, zoom: 14};
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+                var marker = new google.maps.Marker({position:myCenter});
+                marker.setMap(map);
+
+                var infowindow = new google.maps.InfoWindow({
+                  content: "Race for the Cure at Ohio University"
+                });
+                infowindow.open(map,marker);
+              }
+              var img = document.getElementById("ohio");
+                  img.src = this.value;
+              </script>
+
+              <script>
+              function myMapP() {
+                var myCenter = new google.maps.LatLng(40.1176,-75.01451);
+                var mapCanvas = document.getElementById("map");
+                var mapOptions = {center: myCenter, zoom: 14};
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+                var marker = new google.maps.Marker({position:myCenter});
+                marker.setMap(map);
+
+                var infowindow = new google.maps.InfoWindow({
+                  content: "Philadelphia 3-day"
+                });
+                infowindow.open(map,marker);
+              }
+
+              var img = document.getElementById("p");
+                  img.src = this.value;
+              </script>
+
+              <script>
+              function myMapNY() {
+                var myCenter = new google.maps.LatLng(42.648322,-73.751608);
+                var mapCanvas = document.getElementById("map");
+                var mapOptions = {center: myCenter, zoom: 14};
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+                var marker = new google.maps.Marker({position:myCenter});
+                marker.setMap(map);
+
+                var infowindow = new google.maps.InfoWindow({
+                  content: "Komen Northeastern New York Race for the Cure"
+                });
+                infowindow.open(map,marker);
+              }
+
+              var img = document.getElementById("ny");
+                  img.src = this.value;
+              </script>
+
+              <script>
+              function myMapNY1() {
+                var myCenter = new google.maps.LatLng(42.8922520495472
+              ,-78.859414042723);
+                var mapCanvas = document.getElementById("map");
+                var mapOptions = {center: myCenter, zoom: 14};
+                var map = new google.maps.Map(mapCanvas, mapOptions);
+                var marker = new google.maps.Marker({position:myCenter});
+                marker.setMap(map);
+
+                var infowindow = new google.maps.InfoWindow({
+                  content: "Kim Beat breast cancer cookout"
+                });
+                infowindow.open(map,marker);
+              }
+
+              var img = document.getElementById("ny");
+                  img.src = this.value;
+              </script>
+
+              <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+          <div class="infoBlocks">
+                <h1>Local Meetups And Events!</h1>
+          </div>
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Choose a state
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="javascript:myMap()">Ohio</a></li>
+                    <li class="divider"></li>
+              <li><a href="javascript:myMapP()">Pennsylvania</a></li>
+                    <li class="divider"></li>
+              <li><a href="javascript:myMapNY()">Albany, New York</a></li>
+              <li class="divider"></li>
+              <li><a href="javascript:myMapNY1()">Buffalo, New York</a></li>
+            </ul>
+           </div>
+    
+        </br>
+        </br>
+        <img id="ohio" src="Screen Shot 2016-10-14 at 11.15.31 PM.png"/>
+        <img id="p" src="Screen Shot 2016-10-14 at 11.16.42 PM.png"/>
+        <img id="ny" src="Screen Shot 2016-10-14 at 11.16.59 PM.png"/>
+        <img id="ny" src="Screen Shot 2016-10-15 at 12.12.32 AM.png"/>
         </div>
-
-
-        <div class="col-xs-10">
-
-        <div class="container">
-          <div class="mapbox">
-
-<div id="map" style="width:100%;height:500px"></div>
-
-<script>
-function myMap() {
-  var myCenter = new google.maps.LatLng(39.31371,-82.096417);
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: myCenter, zoom: 14};
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  var marker = new google.maps.Marker({position:myCenter});
-  marker.setMap(map);
-
-  var infowindow = new google.maps.InfoWindow({
-    content: "Race for the Cure at Ohio University"
-  });
-  infowindow.open(map,marker);
-}
-var img = document.getElementById("ohio");
-    img.src = this.value;
-</script>
-
-<script>
-function myMapP() {
-  var myCenter = new google.maps.LatLng(40.1176,-75.01451);
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: myCenter, zoom: 14};
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  var marker = new google.maps.Marker({position:myCenter});
-  marker.setMap(map);
-
-  var infowindow = new google.maps.InfoWindow({
-    content: "Philadelphia 3-day"
-  });
-  infowindow.open(map,marker);
-}
-
-var img = document.getElementById("p");
-    img.src = this.value;
-</script>
-
-<script>
-function myMapNY() {
-  var myCenter = new google.maps.LatLng(42.648322,-73.751608);
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: myCenter, zoom: 14};
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  var marker = new google.maps.Marker({position:myCenter});
-  marker.setMap(map);
-
-  var infowindow = new google.maps.InfoWindow({
-    content: "Komen Northeastern New York Race for the Cure"
-  });
-  infowindow.open(map,marker);
-}
-
-var img = document.getElementById("ny");
-    img.src = this.value;
-</script>
-
-<script>
-function myMapNY1() {
-  var myCenter = new google.maps.LatLng(42.8922520495472
-,-78.859414042723);
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {center: myCenter, zoom: 14};
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  var marker = new google.maps.Marker({position:myCenter});
-  marker.setMap(map);
-
-  var infowindow = new google.maps.InfoWindow({
-    content: "Kim Beat breast cancer cookout"
-  });
-  infowindow.open(map,marker);
-}
-
-var img = document.getElementById("ny");
-    img.src = this.value;
-</script>
-
-<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-<div class="container">
-   <div class="infoBlocks">
-            <h1>Local Meetups And Events!</h1>
-  <div class="dropdown">
-    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Choose a state
-    <span class="caret"></span></button>
-    <ul class="dropdown-menu">
-      <li><a href="javascript:myMap()">Ohio</a></li>
-            <li class="divider"></li>
-      <li><a href="javascript:myMapP()">Pennsylvania</a></li>
-            <li class="divider"></li>
-      <li><a href="javascript:myMapNY()">Albany, New York</a></li>
-      <li class="divider"></li>
-      <li><a href="javascript:myMapNY1()">Buffalo, New York</a></li>
-    </ul>
-  </div>
-</div>
-</br>
-</br>
-<img id="ohio" src="Screen Shot 2016-10-14 at 11.15.31 PM.png"/>
-<img id="p" src="Screen Shot 2016-10-14 at 11.16.42 PM.png"/>
-<img id="ny" src="Screen Shot 2016-10-14 at 11.16.59 PM.png"/>
-<img id="ny" src="Screen Shot 2016-10-15 at 12.12.32 AM.png"/>
-
-         <div class="row-fluid">
-         </div>
-         </div>
-
+        
+         
+    </div> <!-- 2nd container-->
+    </div> <!-- row-->
+  </div> <!-- row-->
          <hr>
 
       <footer>
-        <p>&copy; Company 2013</p>
       </footer>
 
     </div><!--/.fluid-container-->
