@@ -279,6 +279,7 @@ a{
 }
 
 .chatIcons{
-  font-size: 20px;
-  color:#f238a6;
+	font-family: Arial;
+	font-size: 40px;
+	color:#f238a6;
 }
