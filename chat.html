@@ -58,6 +58,21 @@
   </head>
 
   <body>
+  <script type="text/javascript">
+    
+if ('serviceWorker' in navigator) {
+  console.log('Service Worker is supported');
+  navigator.serviceWorker.register('sw.js').then(function() {
+    return navigator.serviceWorker.ready;
+  }).then(function(reg) {
+    console.log('Service Worker is ready :^)', reg);
+      // TODO
+  }).catch(function(error) {
+    console.log('Service Worker error :^(', error);
+  });
+}
+
+  </script>
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -170,6 +185,19 @@
 		</div>
 	  </div><!--/row-->
 
+
+<script src="https://www.gstatic.com/firebasejs/3.5.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCi-JQB-iV28sDJ1VbHoOi5HypHdKd43Ww",
+    authDomain: "fir-46612.firebaseapp.com",
+    databaseURL: "https://fir-46612.firebaseio.com",
+    storageBucket: "",
+    messagingSenderId: "289668172220"
+  };
+  firebase.initializeApp(config);
+</script>
 
       <hr>
 
