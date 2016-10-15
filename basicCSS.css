@@ -193,6 +193,26 @@ a{
 .basicText{
   font:PT Sans;
 }
+
+.counter{
+  text-align: center;
+  font-size:140px;
+  color:#f238a6;
+}
+
+.bigText{
+  font-size:30px;
+  text-align:center;
+  margin-top:40px;
+}
+
+.biggerText{
+  font-size:50px;
+  text-align:center;
+  margin-top:100px;
+}
+
+
 /* Featurettes
 ------------------------- */
 
