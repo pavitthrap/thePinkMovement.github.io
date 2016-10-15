@@ -157,6 +157,20 @@ h4 {
 a{
   color:#f238a6;
 }
+
+.pinkColorFill{
+  background-color:#f238a6;
+  border:black;
+}
+
+.pinkColor{
+  color:#f238a6;
+}
+
+.grayColorFill{
+  background-color:#CDCFD1;
+}
+
 .hero-unit{
   fill:#d3d3d3;
   outline:black;
@@ -174,6 +188,10 @@ a{
 }
 .buttonclr{
   color: teal;
+}
+
+.basicText{
+  font:PT Sans;
 }
 /* Featurettes
 ------------------------- */
@@ -241,10 +259,19 @@ a{
 }
 
 #ChatPerson {
-	font-size:20px;
+	margin-top: 30px;
+	text-align: center;
 }
 
 #counselorBtn {
-	align: right;
+	margin-top: 100px;
+	background-color: #f238a6;
+	margin-bottom:20px;
+	width: 200px;
+	height: 80px;
+	text-align: center;
 }
 
+.message1 {
+	padding-left: 10px;
+}
