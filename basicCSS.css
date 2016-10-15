@@ -146,6 +146,24 @@ h4 {
   color:#ffa500;
 }
 
+.imageLinkCol{
+  color:#f238a6;
+}
+
+a{
+  color:#f238a6;
+}
+.hero-unit{
+  fill:#d3d3d3;
+  outline:black;
+}
+
+.imageIcons{
+  margin-left:20px;
+  font-size:150px;
+  color:#f238a6;
+  text-align: center;
+}
 .buttonclr{
   color: teal;
 }
