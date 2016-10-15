@@ -241,10 +241,19 @@ a{
 }
 
 #ChatPerson {
-	font-size:20px;
+	margin-top: 30px;
+	text-align: center;
 }
 
 #counselorBtn {
-	align: right;
+	margin-top: 100px;
+	background-color: #f238a6;
+	margin-bottom:20px;
+	width: 200px;
+	height: 80px;
+	text-align: center;
 }
 
+.message1 {
+	padding-left: 10px;
+}
