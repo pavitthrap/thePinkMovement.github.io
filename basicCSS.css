@@ -277,3 +277,8 @@ a{
 .message1 {
 	padding-left: 10px;
 }
+
+.chatIcons{
+  font-size: 20px;
+  color:#f238a6;
+}
